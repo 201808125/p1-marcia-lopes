@@ -1,0 +1,143 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,405;1,405;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,414;0,700;1,100;1,414;1,700&display=swap');
+html {
+  background-color: black;
+  margin: 0;
+}
+/*MOV___________________________________________*/
+.mov {
+  overflow: hidden;
+}
+.mov span {
+  display: inline-block;
+  white-space: nowrap;
+  width: var(--tw);
+  text-shadow: var(--tw) 0 currentColor, calc(var(--tw) * 2) 0 currentColor, calc(var(--tw) * 3) 0 currentColor, calc(var(--tw) * 4) 0 currentColor;
+  will-change: transform;
+  animation: mov var(--ad) linear infinite;
+  animation-play-state: running;
+}
+@keyframes mov {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+h1 {
+  color: white;
+  background-color: inherit;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1:hover {
+  background-color: yellow;
+  font-size: 3.5rem;
+  transition: 0.5s all;
+}
+
+#linha {
+  margin-top: 1rem;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+#linhaf {
+  margin-top: 3rem;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+
+/*BOTÃO*___________________________________________*/
+
+button {
+  padding: 25px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+  width: 600px;
+}
+
+/*BOTÃO PRIVACY*/
+
+#btn1 {
+  font-size: 140pt;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  padding: 25px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 600px;
+  font-variation-settings: "wght"100, "ital"0;
+  transition: 0.5s all;
+}
+#btn1:hover {
+  text-decoration: underline;
+  color: #0AE5A6;
+  padding: 25px;
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  width: 600px;
+  transition: 0.5s all;
+  font-variation-settings: "wght"300;
+}
+#btn1:hover span {
+  display: none
+}
+#btn1:hover:before {
+  content: "transparency"
+}
+
+/*BOTÃO TRANSPARENCY*/
+
+#btn2 {
+  font-size: 140pt;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  padding: 25px;
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 600px;
+  font-variation-settings: "wght"100, "ital"0;
+  transition: 0.5s all;
+}
+#btn2:hover {
+  font-variation-settings: "wght"300;
+  transition: 0.5s all;
+  text-decoration: underline;
+  color: #FFFF00;
+  padding: 25px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#btn2:hover span {
+  display: none
+}
+#btn2:hover:before {
+  content: "privacy"
+}
